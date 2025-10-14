@@ -6,8 +6,8 @@ const imagemin = require('gulp-imagemin');
 const del = require('del');
 
 // Clean the dist folder before each build
-gulp.task('clean', function () {
-  return del(['dist']);
+gulp.task('clean', async function () {
+  await del(['dist']);
 });
 
 // Compile Nunjucks templates
